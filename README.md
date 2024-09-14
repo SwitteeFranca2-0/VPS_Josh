@@ -30,6 +30,8 @@
 
 > In the 'requirements.txt' file, there are packages dependencies that will need to be installed in order to be able to run the program. These packages and dependencies can be installed using:
 
+> `(vps_env) $ sudo apt-get update`
+
 > `(vps_env) $ pip install -r requirements.txt`
 
 >  This will install the dependencies. 
