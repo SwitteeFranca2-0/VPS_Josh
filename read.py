@@ -71,7 +71,7 @@ def clear_csvs():
                     file = file_list[j]
                     write_to_csv(file, [])
                     print(f'{file} cleared')
-                save_to_sheet(clear_files=True)
+                # save_to_sheet(clear_files=True)
 
 def save_to_sheet(file_local=None, clear_files=None):
     scope = ["https://www.googleapis.com/auth/spreadsheets"] 
@@ -165,7 +165,7 @@ def check_time(rows, file):
     if temp_row != compare_row and temp_row != []:
         print('not equal')
         write_to_csv(file, temp_row)
-        save_to_sheet(file_local=file)
+        # save_to_sheet(file_local=file)
         
 
     
