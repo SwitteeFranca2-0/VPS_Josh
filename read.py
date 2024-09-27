@@ -52,7 +52,7 @@ def clear_csvs():
             file = file_list[j]
             write_to_csv(file, [])
             print(f'{file} cleared')
-        save_to_sheet(clear_files=True)
+        # save_to_sheet(clear_files=True)
     with open('temp.csv', 'r') as f:
         reader = csv.reader(f)
         try:
@@ -182,7 +182,7 @@ def review_temp(temp_row):
         
         if temp_row != rows:
             write_to_csv('temp.csv', temp_row)
-            save_to_sheet(file_local='temp.csv')
+            # save_to_sheet(file_local='temp.csv')
             print('uploaded to temp CSV')
         else:
             print('no update made to temp CSV')
