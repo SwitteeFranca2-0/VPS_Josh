@@ -15,8 +15,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 
 
-url_1 = 'https://cyots.co.uk/ttssel.asp?id=3923&se7xtznvyp1z&sit=dsf&typ=L&pll=-50&plh=0&tbsl=3&tbsh=25&tnrl=2&tnrh=10&tpml=-8&tpmh=-3&cdcs=0&cdds=0&cdcd=1&cdao=0&rtall=1&rtp=1&rct=3'
-url_2 = 'https://cyots.co.uk/ttssel.asp?id=3923&se7xtznvyp1z&sit=dsf&typ=L&pll=-50&plh=0&tdl=1760&tdh=9000&tbsl=3&tbsh=25&tpml=-8&tpmh=-3&cdcs=0&cdds=0&cdcd=1&cdao=0&rtall=1&rtp=1&rct=3'
+url_1 = 'https://cyots.co.uk/ttssel.asp?id=3923&se7xtznvyp1z&sit=dsf&typ=L&lfl=1&lfh=1&tipl=1&tiph=15&tnrl=8&tnrh=50&tpml=-8&tpmh=-3&hon=1&rtawf=1&rtflt=1&rtchs=1&rthdl=1&rtnhf=1&rct=3'
+url_2 = 'https://cyots.co.uk/ttssel.asp?id=3923&se7xtznvyp1z&sit=dsf&typ=L&pll=-50&plh=0&tpml=-8&tpmh=-3&cdcs=0&cdds=0&cdcd=1&cdao=0&hon=1&rtall=1&rct=3'
 url_3 = 'https://cyots.co.uk/ttssel.asp?id=3923&se7xtznvyp1z&sit=dsf&typ=L&pll=-50&plh=0&tbsl=3&tbsh=12&tpml=-8&tpmh=-3&cdcs=0&cdds=0&cdcd=1&cdao=0&rtall=1&rct=3'
 
 file_1 = 'file_1.csv'
