@@ -133,8 +133,25 @@ def save_to_sheet(file_local=None, clear_files=None):
 
 def change_to_utc(time):
     """Change local time to UTC time"""
-    utc_time = str(int(time.split(':')[0]) - 1) + ':' + time.split(':')[1]
+        
+    # Provided time string
+    time = "14:30"
+
+    # Parse the time string into a naive datetime (without timezone info)
+    uk_time = datetime.strptime(time, "%H:%M")
+
+    # Use today's date to handle BST/GMT transitions correctly
+    today = datetime.now().date()
+    uk_time = datetime.combine(today, uk_time.time()).replace(tzinfo=ZoneInfo("Europe/London"))
+
+    # Convert to UTC
+    utc_time = uk_time.astimezone(ZoneInfo("UTC"))
+
+    # Format the UTC time as needed
+    utc_time = utc_time.strftime("%H:%M")
     return utc_time
+   
+
 
 
 def check_time(rows, file):
