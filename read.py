@@ -134,9 +134,6 @@ def save_to_sheet(file_local=None, clear_files=None):
 def change_to_utc(time):
     """Change local time to UTC time"""
         
-    # Provided time string
-    time = "14:30"
-
     # Parse the time string into a naive datetime (without timezone info)
     uk_time = datetime.strptime(time, "%H:%M")
 
