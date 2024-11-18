@@ -144,6 +144,10 @@ def change_to_utc(time):
     # Convert to UTC
     utc_time = uk_time.astimezone(ZoneInfo("UTC"))
 
+    
+    if uk_time.dst() != timedelta(0):  # If DST is active
+        utc_time = utc_time + timezone(hours=1)
+        
     # Format the UTC time as needed
     utc_time = utc_time.strftime("%H:%M")
     return utc_time
